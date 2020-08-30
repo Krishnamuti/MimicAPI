@@ -1,0 +1,16 @@
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\appsettings.json
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.deps.json
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.runtimeconfig.json
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.runtimeconfig.dev.json
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.dll
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.csprojAssemblyReference.cache
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.RazorAssemblyInfo.cache
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.RazorAssemblyInfo.cs
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.AssemblyInfoInputs.cache
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.AssemblyInfo.cs
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.RazorTargetAssemblyInfo.cache
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.pdb
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.dll
+F:\PROJETOS\GITHUB\MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.pdb
