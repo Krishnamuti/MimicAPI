@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krish\\Downloads\\ASP.NETCoreWebAPI-master\\ASP.NETCoreWebAPI-master\\Código-Fonte - Passo a Passo\\Seção 02\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI.csproj": {}
+    "F:\\PROJETOS\\GITHUB\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krish\\Downloads\\ASP.NETCoreWebAPI-master\\ASP.NETCoreWebAPI-master\\Código-Fonte - Passo a Passo\\Seção 02\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI.csproj": {
+    "F:\\PROJETOS\\GITHUB\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krish\\Downloads\\ASP.NETCoreWebAPI-master\\ASP.NETCoreWebAPI-master\\Código-Fonte - Passo a Passo\\Seção 02\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
+        "projectUniqueName": "F:\\PROJETOS\\GITHUB\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
         "projectName": "MimicAPI",
-        "projectPath": "C:\\Users\\krish\\Downloads\\ASP.NETCoreWebAPI-master\\ASP.NETCoreWebAPI-master\\Código-Fonte - Passo a Passo\\Seção 02\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
+        "projectPath": "F:\\PROJETOS\\GITHUB\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
         "packagesPath": "C:\\Users\\krish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krish\\Downloads\\ASP.NETCoreWebAPI-master\\ASP.NETCoreWebAPI-master\\Código-Fonte - Passo a Passo\\Seção 02\\01_Fim\\MimicAPI\\MimicAPI\\obj\\",
+        "outputPath": "F:\\PROJETOS\\GITHUB\\MimicAPI\\MimicAPI\\MimicAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
