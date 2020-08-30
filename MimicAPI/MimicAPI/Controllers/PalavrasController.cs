@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MimicAPI.Database;
 using MimicAPI.Models;
 using System;
@@ -32,25 +33,35 @@ namespace MimicAPI.Controllers
         [HttpGet]
         public ActionResult Obter(int id)
         {
-            return Ok(_banco.Palavras.Find(id));
+            var palavra = _banco.Palavras.AsNoTracking().FirstOrDefault(a => a.Id == id);
+            if (palavra == null)
+                return NotFound();
+
+            return Ok(palavra);
         }
 
         //api/palavras
         [Route("")]
         [HttpPost]
-        public ActionResult Cadastrar(Palavra palavra)
+        public ActionResult Cadastrar([FromBody]Palavra palavra)
         {
             _banco.Palavras.Add(palavra);
-            return Ok();
+            _banco.SaveChanges();
+            return Created($"/api/palavras/{palavra.Id}", palavra);
         }
 
         //api/palavras/1
         [Route("{id}")]
         [HttpPut]
-        public ActionResult Atualizar(int id,Palavra palavra)
+        public ActionResult Atualizar(int id, [FromBody]Palavra palavra)
         {
+            var palavraFind = _banco.Palavras.AsNoTracking().FirstOrDefault(a => a.Id == id);
+            if (palavraFind == null)
+                return NotFound();
+
             palavra.Id = id;
             _banco.Palavras.Update(palavra);
+            _banco.SaveChanges();
             return Ok();
         }
 
@@ -59,7 +70,12 @@ namespace MimicAPI.Controllers
         [HttpDelete]
         public ActionResult Deletar(int id)
         {
+            var palavra = _banco.Palavras.AsNoTracking().FirstOrDefault(a => a.Id == id);
+            if (palavra == null)
+                return NotFound();
+
             _banco.Palavras.Remove(_banco.Palavras.Find(id));
+            _banco.SaveChanges();
             return Ok();
         }
 
