@@ -23,11 +23,14 @@ namespace MimicAPI.Controllers
         //api/palavras
         [Route("")]
         [HttpGet]
-        public ActionResult ObterTodas(DateTime? data)
+        public ActionResult ObterTodas(DateTime? data, int? pagNumero, int? pagRegistroPag)
         {
             var item = _banco.Palavras.AsQueryable();
             if (data.HasValue)
                 item = item.Where(a => a.Criado > data.Value || a.Atualizado > data.Value);
+
+            if (pagNumero.HasValue)            
+                item = item.Skip((pagNumero.Value - 1) * pagRegistroPag.Value).Take(pagRegistroPag.Value);            
 
             return Ok(item);
         } 
