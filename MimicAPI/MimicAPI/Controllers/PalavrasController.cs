@@ -23,10 +23,14 @@ namespace MimicAPI.Controllers
         //api/palavras
         [Route("")]
         [HttpGet]
-        public ActionResult ObterTodas()
+        public ActionResult ObterTodas(DateTime? data)
         {
-            return Ok(_banco.Palavras);
-        }
+            var item = _banco.Palavras.AsQueryable();
+            if (data.HasValue)
+                item = item.Where(a => a.Criado > data.Value || a.Atualizado > data.Value);
+
+            return Ok(item);
+        } 
 
         //api/palavras/1
         [Route("{id}")]
