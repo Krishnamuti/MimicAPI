@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MimicAPI.Database;
 using MimicAPI.Helpers;
@@ -17,10 +18,12 @@ namespace MimicAPI.Controllers
     {
 
         public readonly IPalavraRepository _repository;
+        public readonly IMapper _mapper;
 
-        public PalavrasController(IPalavraRepository repository)
+        public PalavrasController(IPalavraRepository repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
         //api/palavras
