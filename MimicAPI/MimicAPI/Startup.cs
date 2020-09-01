@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using MimicAPI.Database;
 using MimicAPI.Repository;
 using MimicAPI.Repository.Contracts;
+using AutoMapper;
+using MimicAPI.Helpers;
 
 namespace MimicAPI
 {
@@ -22,6 +24,12 @@ namespace MimicAPI
             });
 
             services.AddScoped<IPalavraRepository, PalavraRepository>();
+
+            #region AutoMapper-Config            
+            var config = new MapperConfiguration(cfg => { cfg.AddProfile(new DTOMapperProfile()); });
+            IMapper mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
+            #endregion
 
             services.AddMvc();
         }
