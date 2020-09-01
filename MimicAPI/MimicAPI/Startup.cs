@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MimicAPI.Database;
+using MimicAPI.Repository;
+using MimicAPI.Repository.Contracts;
 
 namespace MimicAPI
 {
@@ -17,8 +19,10 @@ namespace MimicAPI
         {
             services.AddDbContext<MimicContext>(opt => {
                 opt.UseSqlite("Data Source=Database\\Mimic.db");
-            });            
-            
+            });
+
+            services.AddScoped<IPalavraRepository, PalavraRepository>();
+
             services.AddMvc();
         }
        
