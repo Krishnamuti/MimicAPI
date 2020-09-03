@@ -37,7 +37,7 @@ namespace MimicAPI.Repository
                 lista.Paginacao = paginacao;
             }
 
-            lista.AddRange(item.ToList());
+            lista.Results.AddRange(item.ToList());
             return lista;
         }
         public Palavra Obter(int id)
